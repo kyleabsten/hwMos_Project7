@@ -12,8 +12,9 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
     
     lazy var photosDirectory: URL = {
         let fm = FileManager.default
-        let path = fm.homeDirectoryForCurrentUser
-        let saveDirectory = path.appendingPathComponent("SlideMark")
+        let paths = fm.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        let saveDirectory = documentsDirectory.appendingPathComponent("SlideMark")
         
         if !fm.fileExists(atPath: saveDirectory.path) {
             try? fm.createDirectory(at: saveDirectory, withIntermediateDirectories: true)
