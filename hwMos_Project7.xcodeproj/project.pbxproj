@@ -11,6 +11,8 @@
 		9CA9E385207D2036002C3A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9E384207D2036002C3A61 /* ViewController.swift */; };
 		9CA9E387207D2036002C3A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9E386207D2036002C3A61 /* Assets.xcassets */; };
 		9CA9E38A207D2036002C3A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9E388207D2036002C3A61 /* Main.storyboard */; };
+		9CA9E394207D2AAA002C3A61 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9E392207D2AAA002C3A61 /* Photo.swift */; };
+		9CA9E395207D2AAA002C3A61 /* Photo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9E393207D2AAA002C3A61 /* Photo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		9CA9E389207D2036002C3A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CA9E38B207D2036002C3A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA9E38C207D2036002C3A61 /* hwMos_Project7.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hwMos_Project7.entitlements; sourceTree = "<group>"; };
+		9CA9E392207D2AAA002C3A61 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		9CA9E393207D2AAA002C3A61 /* Photo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Photo.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				9CA9E384207D2036002C3A61 /* ViewController.swift */,
 				9CA9E386207D2036002C3A61 /* Assets.xcassets */,
 				9CA9E388207D2036002C3A61 /* Main.storyboard */,
+				9CA9E392207D2AAA002C3A61 /* Photo.swift */,
+				9CA9E393207D2AAA002C3A61 /* Photo.xib */,
 				9CA9E38B207D2036002C3A61 /* Info.plist */,
 				9CA9E38C207D2036002C3A61 /* hwMos_Project7.entitlements */,
 			);
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA9E395207D2AAA002C3A61 /* Photo.xib in Resources */,
 				9CA9E387207D2036002C3A61 /* Assets.xcassets in Resources */,
 				9CA9E38A207D2036002C3A61 /* Main.storyboard in Resources */,
 			);
@@ -134,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA9E394207D2AAA002C3A61 /* Photo.swift in Sources */,
 				9CA9E385207D2036002C3A61 /* ViewController.swift in Sources */,
 				9CA9E383207D2036002C3A61 /* AppDelegate.swift in Sources */,
 			);

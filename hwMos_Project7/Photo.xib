@@ -1,11 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="Photo" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="Photo" customModule="hwMos_Project7" customModuleProvider="target">
             <connections>
+                <outlet property="imageView" destination="cKv-r7-Dz6" id="uqV-Jc-Ue6"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -14,6 +16,19 @@
         <customView id="Hz6-mo-xeY">
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKv-r7-Dz6">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="KfL-a2-hjw"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cKv-r7-Dz6" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="IKX-Q6-Tdi"/>
+                <constraint firstItem="cKv-r7-Dz6" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="cJ1-7G-GBb"/>
+                <constraint firstAttribute="trailing" secondItem="cKv-r7-Dz6" secondAttribute="trailing" id="lIx-h2-4Af"/>
+                <constraint firstAttribute="bottom" secondItem="cKv-r7-Dz6" secondAttribute="bottom" id="uJO-5V-LnY"/>
+            </constraints>
         </customView>
+        <collectionViewItem id="xPc-01-P1p" customClass="Photo" customModule="hwMos_Project7" customModuleProvider="target"/>
     </objects>
 </document>
